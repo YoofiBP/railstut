@@ -20,7 +20,7 @@
           <hr>
 
           <!-- Preview Image -->
-          <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+          <img class="img-fluid rounded" src="" alt="">
 
           <hr>
 
@@ -147,9 +147,12 @@
 
           <!-- Side Widget -->
           <div class="card my-4">
-            <h5 class="card-header">Side Widget</h5>
+            <h5 class="card-header">Recent Posts</h5>
             <div class="card-body">
-              You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+              <% @articles.each do |a| %>
+              <strong><%= link_to a.title, a%></strong>
+              <p><%= truncate(a.body)%></p>
+              <% end %>
             </div>
           </div>
 
