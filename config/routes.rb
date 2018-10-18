@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :articles
   devise_for :users, :controllers => { registrations: 'registrations'}
   devise_for :models
   root to: 'pages#homepage'
