@@ -21,4 +21,4 @@ class RegistrationsController < Devise::RegistrationsController
  :lastname
  )
  end
-end 
+end
