@@ -9,7 +9,7 @@
                 autofocus: true,
                 input_html: { autocomplete: "email" }
                 %>
-    <!-- <%= f.input :username,
+    <%= f.input :username,
                 required: false,
                 autofocus: false,
                 input_html: { autocomplete: "username" }
@@ -23,7 +23,7 @@
                 required: false,
                 autofocus: false,
                 input_html: { autocomplete: "lastname" }
-                %> -->
+                %>
     <%= f.input :password,
                 required: true,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
